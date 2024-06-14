@@ -38,6 +38,19 @@ function generateTable() {
     let rMin = parseInt(document.getElementById('rowmin').value);
     let rMax = parseInt(document.getElementById('rowmax').value);
 
+    //make sure max is greater than min
+    if (cMin > cMax) {
+        let temp = cMin;
+        cMin = cMax;
+        cMax = temp;
+    }
+    
+    if (rMin > rMax){
+        let temp = rMin;
+        rMin = rMax;
+        rMax = temp;
+    }
+    
     // Create table
     let table = '<table class="table table-bordered striped-table">';
     table += '<tr><th></th>'; // Start the first row with an empty cell for the top-left corner
