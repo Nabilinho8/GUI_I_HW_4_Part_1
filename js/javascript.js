@@ -1,3 +1,10 @@
+/*
+Nabil Barkallah
+Nabil_Barkallah@student.uml.edu
+5/2/2024
+····|This file is the javascript code for the dynamic timestable generator application.
+ */
+
 $(document).ready(function(){
     $('#tableform').validate({
         rules: {
